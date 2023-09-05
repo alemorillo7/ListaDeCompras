@@ -15,6 +15,8 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     background: rgb(34,195,109);
     background: radial-gradient(circle, rgba(34,195,109,1) 0%, rgba(24,78,145,1) 100%);
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -109,13 +111,13 @@ li {
 
  /* Estilos para el pie de página */
  footer {
-    background-color: #8fa6a785; /* Color de fondo */
+    background: rgb(183,200,191);
+    background: radial-gradient(circle, rgba(183,200,191,1) 0%, rgba(213,202,214,1) 100%);
     color: #1e1717; /* Color del texto */
     text-align: center; /* Alinear el texto al centro */
     padding: 10px 0; /* Espaciado interno */
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+   margin-top: auto;
+    
 }
 
 /* Estilos para el enlace de copyright */
@@ -124,8 +126,37 @@ footer a {
     text-decoration: none; /* Eliminar subrayado */
 }
 
-/* Estilos para el contenedor principal */
-.container {
-    /* Ajusta el espaciado inferior para dejar espacio para el pie de página */
-    margin-bottom: 50px; /* Ajusta según sea necesario */
+
+/* Estilos para el contenedor del campo de entrada y el botón */
+.input-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
 }
+
+/* Estilos para el contenedor del campo de entrada y el botón */
+.input-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px; /* Espacio entre el campo de entrada y el botón */
+}
+
+/* Estilos para el campo de entrada de texto */
+#taskInput {
+    flex: 1; /* Toma todo el espacio disponible */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+/* Estilos para el botón "Agregar" */
+#addTask {
+    padding: 10px 20px;
+    background-color: #8d1414;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+

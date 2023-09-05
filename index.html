@@ -10,19 +10,21 @@
     <title>Lista de Compras</title>
 </head>
 <body>
-<div class="container">
-    <h1>Lista de Compras</h1>
-    <input type="text" id="taskInput" placeholder="Agregar un ítem">
-    <button id="addTask">Agregar</button>
-    <ul id="taskList"></ul>
-    <div id="total">Total: $</div>
+    <div class="container">
+        <h1>Lista de Compras</h1>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Agregar un ítem">
+            <button id="addTask">Agregar</button>
+        </div>
+        <div class="task-list-container">
+            <ul id="taskList"></ul>
+        </div>
+        <div id="total">Total: $</div>
+    </div>
     
-</div>
-
-<footer>
-    &copy; 2023 Alejandro Morillo
-</footer>
-
+    <footer>
+        &copy; 2023 Alejandro Morillo
+    </footer>
     <script src="compras.js"></script>
 </body>
-</html> 
+</html>
