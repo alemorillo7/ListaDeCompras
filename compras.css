@@ -155,8 +155,14 @@ footer a {
     padding: 10px 20px;
     background-color: #8d1414;
     color: #fff;
-    border: none;
+    border: solid 1px black;
     cursor: pointer;
     border-radius: 10px;
+    margin: 10px 0 0 0;
 }
 
+/* Estilos para el contenedor de la lista de ítems */
+#taskList {
+    max-height: 60vh; /* Altura máxima del 60% de la altura de la ventana */
+    overflow-y: auto; /* Agregar una barra de desplazamiento vertical cuando sea necesario */
+}
